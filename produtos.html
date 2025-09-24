@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agroboi - Produtos Reais</title>
+  <style>
+    :root {
+      --green:#1b7a3a;
+      --dark:#0b2b16;
+      --card:#fff;
+      --shadow:0 6px 18px rgba(11,43,22,0.08);
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background:#f7fbf8;
+      color:var(--dark);
+      margin:0;
+      padding:0;
+    }
+    header {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:18px 24px;
+      background:#fff;
+      box-shadow:var(--shadow);
+    }
+    .logo {
+      font-size:22px;
+      font-weight:700;
+      color:var(--green);
+    }
+    nav {
+      display:flex;
+      gap:18px;
+    }
+    nav a {
+      text-decoration:none;
+      color:var(--dark);
+      font-weight:600;
+    }
+    h1,h2 {
+      color:var(--green);
+      margin:20px 0;
+    }
+    .container {
+      max-width:1200px;
+      margin:40px auto;
+      padding:0 20px;
+    }
+    /* grid responsivo */
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+    .card {
+      background:var(--card);
+      border-radius:8px;
+      box-shadow:var(--shadow);
+      padding:16px;
+      text-align:center;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+    .card img {
+      width:100%;
+      max-height:220px;
+      object-fit:contain;
+      border-radius:8px;
+      margin-bottom:10px;
+      background:#fff;
+    }
+    .card h3 {
+      margin:10px 0;
+      font-size:16px;
+      min-height:50px;
+    }
+    .price {
+      color:var(--green);
+      font-weight:700;
+      font-size:18px;
+      margin-bottom:10px;
+    }
+    .btn {
+      display:inline-block;
+      padding:10px 16px;
+      background:var(--green);
+      color:#fff;
+      border-radius:6px;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.2s;
+    }
+    .btn:hover {
+      background:#155d2d;
+    }
+    footer {
+      background:var(--dark);
+      color:#fff;
+      padding:30px;
+      text-align:center;
+      margin-top:40px;
+      font-size:14px;
+    }
+    footer a {
+      color:#fff;
+      text-decoration:underline;
+    }
+    .whatsapp-btn {
+      position:fixed;
+      bottom:30px;
+      right:30px;
+      z-index:1000;
+    }
+    .whatsapp-btn img {
+      width:55px;
+      height:55px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🐂 Agroboi</div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre Nós</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Nossos Produtos</h1>
+
+    <h2>🐄 Alimentos para Animais</h2>
+    <div class="grid">
+      <div class="card"><img src="am.png" alt=""><h3>Núcleo Alto Grão AM 25kg</h3><div class="price">R$ 245,00</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+      <div class="card"><img src="ki.png" alt=""><h3>Ração Engorda Bovinos 30kg</h3><div class="price">R$ 64,90</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+      <div class="card"><img src="avess.png" alt=""><h3>Ração Bovinos para Pastagem 25kg</h3><div class="price">R$ 65,00</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+      <div class="card"><img src="nu.png" alt=""><h3>Núcleo Sup. Mineral Leite Vacas 20kg</h3><div class="price">R$ 280,00</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+      <div class="card"><img src="aves.png" alt=""><h3>Ração de Aves Crescimento 40kg</h3><div class="price">R$ 85,90</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+    </div>
+
+    <h2>💉 Medicamentos Veterinários</h2>
+    <div class="grid">
+      <div class="card"><img src="vacina.png" alt=""><h3>Vacina Paratifo Leitões 50mL</h3><div class="price">R$ 39,90</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+      <div class="card"><img src="bio.png" alt=""><h3>Vermífugo Bio Attack 500ml</h3><div class="price">R$ 75,90</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+      <div class="card"><img src="cef.png" alt=""><h3>Ceftiofur CEF50 100ml</h3><div class="price">R$ 69,90</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+      <div class="card"><img src="bovigan.png" alt=""><h3>Bovigam Injetável Bayer 15ml</h3><div class="price">R$ 45,00</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+      <div class="card"><img src="antiparasita.png" alt=""><h3>Antiparasitário Bovinos/Ovinos 1L</h3><div class="price">R$ 249,90</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+    </div>
+
+    <h2>🌱 Sementes, Flores e Plantas</h2>
+    <div class="grid">
+      <div class="card"><img src="disolo.png" alt=""><h3>Semente Milho Bandeirante BNS 20kg</h3><div class="price">R$ 265,00</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+      <div class="card"><img src="bona.png" alt=""><h3>Semente Milho Al Bandeirante 20kg</h3><div class="price">R$ 229,00</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+      <div class="card"><img src="milho.png" alt=""><h3>Semente Milho Lavrador Silagem 20kg</h3><div class="price">R$ 260,00</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+      <div class="card"><img src="robu.png" alt=""><h3>Semente Milho Híbrido Robusto 20kg</h3><div class="price">R$ 235,00</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+      <div class="card"><img src="pasta.jpg" alt=""><h3>Capim Mombaça 20kg</h3><div class="price">R$ 149,90</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+    </div>
+
+    <h2>🧪 Defensivos, Adubos e Fertilizantes</h2>
+    <div class="grid">
+      <div class="card"><img src="ferti.png" alt=""><h3>Fertilizante NPK 20-05-20 25kg</h3><div class="price">R$ 200,00</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+      <div class="card"><img src="regent.jpg" alt=""><h3>Regent 800WG Fipronil 1kg</h3><div class="price">R$ 450,00</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+      <div class="card"><img src="isen.png" alt=""><h3>Inseticida Joiner 1L</h3><div class="price">R$ 1.100,00</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+      <div class="card"><img src="tp.png" alt=""><h3>Triplo Atack Moscas/Carrapatos</h3><div class="price">R$ 149,90</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+      <div class="card"><img src="ex.png" alt=""><h3>EXZOLT 5% POUR-ON 1L</h3><div class="price">R$ 2.800,90</div><a href="#" class="btn">Comprar pelo WhatsApp</a></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Agroboi - Trevisol & Cia LTDA</p>
+    <p>CNPJ: 33.711.409/0001-75 | Endereço: Rua Edgar Garcia de Siqueira, 305A – Centro-Sul – Sorriso/MT</p>
+    <p><a href="index.html">Início</a> | <a href="sobre.html">Sobre Nós</a> | <a href="privacidade.html">Política de Privacidade</a></p>
+  </footer>
+
+  <!-- Botão WhatsApp fixo -->
+  <a href="https://wa.me/556635441719?text=Olá! Quero falar com a Agroboi" target="_blank" class="whatsapp-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+
+  <!-- Script para redirecionar todos os botões de compra -->
+  <script>
+    document.querySelectorAll(".btn").forEach(botao => {
+      botao.addEventListener("click", function(e) {
+        e.preventDefault();
+        const produto = this.closest(".card").querySelector("h3").innerText;
+        const preco = this.closest(".card").querySelector(".price").innerText;
+        const msg = `Olá! Tenho interesse no produto: ${produto} - ${preco}`;
+        window.open(`https://wa.me/556635441719?text=${encodeURIComponent(msg)}`, "_blank");
+      });
+    });
+  </script>
+</body>
+</html>

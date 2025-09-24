@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agroboi - Contato</title>
+  <style>
+    :root {
+      --green:#1b7a3a;
+      --dark:#0b2b16;
+      --card:#fff;
+      --shadow:0 6px 18px rgba(11,43,22,0.08);
+      font-family: Arial, sans-serif;
+    }
+    body{background:#f7fbf8;color:var(--dark);margin:0;padding:0}
+    header{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;background:#fff;box-shadow:var(--shadow)}
+    .logo{font-size:22px;font-weight:700;color:var(--green)}
+    nav{display:flex;gap:18px}
+    nav a{text-decoration:none;color:var(--dark);font-weight:600}
+    h1{color:var(--green);margin:20px 0;text-align:center}
+    .container{max-width:1000px;margin:40px auto;padding:0 20px}
+    form{background:var(--card);padding:20px;border-radius:8px;box-shadow:var(--shadow);margin-bottom:40px}
+    label{display:block;margin-bottom:6px;font-weight:600}
+    input,textarea{width:100%;padding:10px;margin-bottom:16px;border:1px solid #ccc;border-radius:6px}
+    button{background:var(--green);color:#fff;padding:12px 20px;border:none;border-radius:6px;font-weight:600;cursor:pointer}
+    button:hover{background:#145c2c}
+    .info{background:var(--card);padding:20px;border-radius:8px;box-shadow:var(--shadow);margin-bottom:40px}
+    iframe{width:100%;height:300px;border:0;border-radius:8px;box-shadow:var(--shadow)}
+    footer{background:var(--dark);color:#fff;padding:30px;text-align:center;margin-top:40px;font-size:14px}
+    footer a{color:#fff;text-decoration:underline}
+    .whatsapp-btn{position:fixed;bottom:20px;right:20px;z-index:1000}
+    .whatsapp-btn img{width:60px;height:60px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🐂 Agroboi</div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Fale Conosco</h1>
+
+    <!-- Formulário de contato -->
+    <form>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+      <label for="telefone">Telefone</label>
+      <input type="text" id="telefone" name="telefone" placeholder="(66) 3544-1719">
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Informações de contato -->
+    <div class="info">
+      <h2>Informações de Contato</h2>
+      <p><strong>Endereço:</strong> Rua Edgar Garcia de Siqueira, 305A – Centro-Sul – Sorriso/MT</p>
+      <p><strong>Telefone:</strong> (66) 3544-1719</p>
+      <p><strong>E-mail:</strong> <a href="mailto:agroboitrevisol@gmail.com">agroboitrevisol@gmail.com</a></p>
+      <p><strong>CNPJ:</strong> 33.711.409/0001-75</p>
+    </div>
+
+    <!-- Mapa -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.39718398313!2d-55.7261!3d-12.5417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939df3f0d8e1c7%3A0x9a9b16d8cf7bbaf5!2sSorriso%20-%20MT!5e0!3m2!1spt-BR!2sbr!4v1699980000000"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <footer>
+    <p>© 2025 Agroboi - Trevisol & Cia LTDA</p>
+    <p>CNPJ: 33.711.409/0001-75 | Endereço: Rua Edgar Garcia de Siqueira, 305A – Centro-Sul – Sorriso/MT</p>
+    <p><a href="index.html">Início</a> | <a href="sobre.html">Sobre Nós</a> | <a href="privacidade.html">Política de Privacidade</a> | <a href="contato.html">Contato</a></p>
+  </footer>
+
+  <!-- Botão WhatsApp -->
+  <a href="https://wa.me/556635441719" target="_blank" class="whatsapp-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+</body>
+</html>

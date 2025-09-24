@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agroboi - Página Inicial</title>
+  <style>
+    :root{
+      --green:#1b7a3a;
+      --dark:#0b2b16;
+      --muted:#6b6b6b;
+      --accent:#f0f5f1;
+      --card:#fff;
+      --shadow:0 6px 18px rgba(11,43,22,0.08);
+      font-family:Arial, sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:#f7fbf8;color:var(--dark)}
+    header{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;background:#fff;box-shadow:var(--shadow)}
+    .logo{font-size:22px;font-weight:700;color:var(--green)}
+    nav{display:flex;gap:18px}
+    nav a{text-decoration:none;color:var(--dark);font-weight:600}
+    .hero{padding:60px 20px;text-align:center;background:url('v.png') center/cover no-repeat;color:#fff}
+    .hero h1{font-size:40px;margin-bottom:14px}
+    .hero p{font-size:20px;margin-bottom:20px}
+    .hero a{background:var(--green);color:#fff;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:bold}
+    .container{max-width:1100px;margin:40px auto;padding:0 20px}
+    h2{margin-bottom:20px;color:var(--green)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+    .card{background:var(--card);padding:16px;border-radius:8px;box-shadow:var(--shadow);text-align:center}
+    .card h4{margin:8px 0;color:var(--dark)}
+    /* Galeria deslizante */
+    .gallery{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}
+    .gallery img{flex:0 0 auto;width:100%;max-width:350px;height:220px;object-fit:cover;border-radius:8px;scroll-snap-align:start;box-shadow:var(--shadow)}
+    /* Formulário */
+    form{display:flex;flex-direction:column;gap:12px;background:#fff;padding:20px;border-radius:8px;box-shadow:var(--shadow)}
+    input,textarea{padding:10px;border:1px solid #ccc;border-radius:6px;font-size:14px}
+    button{background:var(--green);color:#fff;padding:12px;border:none;border-radius:6px;font-weight:bold;cursor:pointer}
+    /* Depoimentos */
+    .testimonials{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+    .testimonial{background:#fff;padding:16px;border-radius:8px;box-shadow:var(--shadow);font-style:italic}
+    .testimonial strong{display:block;margin-top:10px;color:var(--green);font-style:normal}
+    /* Rodapé */
+    footer{background:var(--dark);color:#fff;padding:30px;text-align:center;margin-top:40px;font-size:14px;position:relative}
+    footer p{margin:6px 0}
+    footer a{color:#fff;text-decoration:underline}
+    /* Botão WhatsApp fixo */
+    .whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* garante que fique no canto direito */
+  z-index: 1000;
+}
+
+.whatsapp-btn img {
+  width: 60px;   /* aumenta/diminui se quiser maior ou menor */
+  height: 60px;
+}
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🐂 Agroboi</div>
+    <nav>
+      <a href="#home">Início</a>
+      <a href="contato.html">Contato</a>
+      <a href="produtos.html">Produtos
+    </nav>
+  </header>  <section class="hero" id="home">
+    <h1>35 anos de confiança no agronegócio</h1>
+    <p>Medicamentos veterinários, rações, sementes e insumos agrícolas em Sorriso/MT</p>
+    <a href="#servicos">Nossos Serviços</a>
+  </section>  <div class="container" id="servicos">
+    <h2>Serviços</h2>
+    <div class="grid">
+      <div class="card"><h4>Medicamentos Veterinários</h4><p>Venda de vacinas e medicamentos de qualidade.</p></div>
+      <div class="card"><h4>Rações e Suplementos</h4><p>Alimentos para bovinos, suínos e aves em atacado.</p></div>
+      <div class="card"><h4>Sementes e Plantas</h4><p>Atacado de sementes, gramas e flores.</p></div>
+      <div class="card"><h4>Defensivos e Fertilizantes</h4><p>Adubos, corretivos e defensivos agrícolas.</p></div>
+    </div>
+  </div>  <div class="container">
+    <h2>Galeria</h2>
+    <div class="gallery">
+      <img src="1.png" alt="Foto 1">
+      <img src="2.png" alt="Foto 2">
+      <img src="3.png" alt="Foto 3">
+      <img src="4.png" alt="Foto 4">
+    </div>
+  </div>  <div class="container">
+    <h2>Depoimentos</h2>
+    <div class="testimonials">
+      <div class="testimonial">“Ótimo atendimento e produtos de confiança.”<strong>— João Pereira</strong></div>
+      <div class="testimonial">“A Agroboi sempre entrega no prazo, recomendo.”<strong>— Maria Souza</strong></div>
+      <div class="testimonial">“Preços justos e qualidade excelente.”<strong>— Carlos Silva</strong></div>
+      <div class="testimonial">“Me ajudaram muito na saúde do meu rebanho.”<strong>— Ana Oliveira</strong></div>
+      <div class="testimonial">“Parceria de anos, sempre confiável.”<strong>— Roberto Lima</strong></div>
+    </div>
+  </div>  <div class="container" id="contato">
+    <h2>Contato Rápido</h2>
+    <form>
+      <input type="text" placeholder="Nome" required>
+      <input type="email" placeholder="E-mail" required>
+      <input type="tel" placeholder="Telefone">
+      <textarea rows="4" placeholder="Mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>  <footer>
+    <p>© 2025 Agroboi - Trevisol & Cia LTDA</p>
+    <p>CNPJ: 33.711.409/0001-75 | Endereço: Rua Edgar Garcia de Siqueira, 305A – Centro-Sul – Sorriso/MT</p>
+    <p><a href="sobre.html">Sobre Nós</a> | <a href="politica.html">Política de Privacidade</a></p>
+  </footer><a href="https://wa.me/556635441719" target="_blank" class="whatsapp-btn">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>" alt="WhatsApp" />
+</a>
+
+</body>
+</html>
